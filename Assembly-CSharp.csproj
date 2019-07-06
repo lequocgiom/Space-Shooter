@@ -60,6 +60,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Bullet Scripts\PlayerBullet.cs" />
     <Compile Include="Assets\Scripts\Player Scripts\Player.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>D:/Unity Repos/Space Shooter/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
