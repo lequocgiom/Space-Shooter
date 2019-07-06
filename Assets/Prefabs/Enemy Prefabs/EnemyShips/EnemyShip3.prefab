@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 9147457393758585197}
   - component: {fileID: 7931772488593097218}
   - component: {fileID: 5191643820072760352}
+  - component: {fileID: -7441594612085132423}
   m_Layer: 0
   m_Name: EnemyShip3
-  m_TagString: Untagged
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -127,6 +128,23 @@ PolygonCollider2D:
       - {x: 0.16627997, y: -0.32319975}
       - {x: 0.25691977, y: -0.32595968}
       - {x: 0.28627965, y: -0.28595972}
+--- !u!114 &-7441594612085132423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1650589232039281366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a839af40136c5549ab483426a578900, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPos: {fileID: 9195657451276384629}
+  bullet: {fileID: 5599035436303560626, guid: 5b8799dc518a13a48863d098597acbb8, type: 3}
+  speedX: 1.2
+  speedY: 2
+  bounds: 2.5
 --- !u!1 &4222823794661835700
 GameObject:
   m_ObjectHideFlags: 0

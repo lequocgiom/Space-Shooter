@@ -14,6 +14,10 @@ public class Collector : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D target)
     {
+        if (target.tag == "enemy" || target.tag == "enemyBullet")
+        {
+            Destroy(target.gameObject);
+        }
         if (target.tag == "BG")
         {
             Vector2 tempPos = target.transform.position;

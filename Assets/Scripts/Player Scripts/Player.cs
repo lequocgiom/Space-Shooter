@@ -38,4 +38,13 @@ public class Player : MonoBehaviour
         yield return new WaitForSeconds(0.15f);
         StartCoroutine(Shoot());
     }
+
+    private void OnTriggerEnter2D(Collider2D target)
+    {
+        if (target.tag == "enemy" || target.tag == "enemyBullet")
+        {
+            Destroy(target.gameObject);
+            gameObject.SetActive(false);
+        }
+    }
 }

@@ -22,6 +22,6 @@ public class CameraFollow : MonoBehaviour
                 offset, transform.position.z);
         else
             transform.position = new Vector3(transform.position.x, transform.position.y +
-                .5f, transform.position.z);
+                .05f, transform.position.z);
     }
 }

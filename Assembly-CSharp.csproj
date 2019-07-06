@@ -65,6 +65,8 @@
     <Compile Include="Assets\Scripts\Enemy Scripts\EnemyShip.cs" />
     <Compile Include="Assets\Scripts\Enemy Scripts\FallDown.cs" />
     <Compile Include="Assets\Scripts\Gameplay Scripts\Collector.cs" />
+    <Compile Include="Assets\Scripts\Gameplay Scripts\GameController.cs" />
+    <Compile Include="Assets\Scripts\Gameplay Scripts\Spawner.cs" />
     <Compile Include="Assets\Scripts\Player Scripts\Player.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>D:/Unity Repos/Space Shooter/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
