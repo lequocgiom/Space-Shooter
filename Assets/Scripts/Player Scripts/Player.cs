@@ -16,7 +16,7 @@ public class Player : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         Movement();
     }
@@ -24,9 +24,9 @@ public class Player : MonoBehaviour
     void Movement()
     {
         float hor = speed * Time.deltaTime * Input.GetAxis("Horizontal");
-        float ver = speed * Time.deltaTime;
+        float ver = speed * Time.deltaTime * .5f;
 
-        transform.Translate(new Vector2(hor, 0));
+        transform.Translate(new Vector2(hor, ver));
 
         transform.position = new Vector2(Mathf.Clamp(transform.position.x, -xBounds, xBounds),
             transform.position.y);
@@ -35,7 +35,7 @@ public class Player : MonoBehaviour
     IEnumerator Shoot()
     {
         Instantiate(bullet, bulletPos.position, Quaternion.identity);
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(0.15f);
         StartCoroutine(Shoot());
     }
 }
